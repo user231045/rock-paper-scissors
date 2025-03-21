@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./design.css">
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" type="image/x-icon" href="./img_icon.png">
+</head>
+
+<body>
+    <section class="game">
+        <div class="title">~Rock Paper Scissors~</div>
+
+        <!-- game rules -->
+        <div class="rules">
+            <p>The rules are easy. You basically play against the computer and choose one random button. </p>
+            <p>The computer will randomly choose its move. Let's see who wins!</p>
+            <p>Just remember: rock beats scissors, papers beats rock, and scissors beats paper.</p>
+        </div>
+
+        <!-- score board section -->
+        <div class="score">
+            <div class="playerScore">
+                <h2>You</h2>
+                <p class="p-count count">0</p>
+            </div>
+            <div class="computerScore">
+                <h2>Computer</h2>
+                <p class="c-count count">0</p>
+            </div>
+        </div>
+
+        <!-- game audio elements -->
+        <audio id="computerWinSound" src="./boom_sound.mp3"></audio>
+        <audio id="playerLoseSound" src="./player_lost.mp3"></audio>
+        <audio id="playerWinSound" src="./player_won.mp3"></audio>
+        <audio id="tieSound" src="./tie_sound.mp3"></audio>
+
+        <!-- messages and buttons for player's moves -->
+        <div class="move">Choose one button</div>
+        <div class="movesleft">Moves Left: 10 </div>
+        <div class="options">
+            <button class="rock">Rock</button>
+            <button class="paper">Paper</button>
+            <button class="scissor">Scissors</button>
+        </div>
+
+        <!-- display area for game result -->
+        <div class="result"></div>
+
+        <!-- btn for restarting the game -->
+        <button class="reload"></button>
+    </section>
+
+    <script src="./game.js"></script>
+
+</body>
+
+</html>
